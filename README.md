@@ -36,7 +36,7 @@ This project develops a deep learning system to classify 17 types of jute pests 
 - **Ensemble Models**:
   - Combined custom CNN and ResNet18 predictions by averaging softmax probabilities (e.g., Model 7 + Model 3: 97.1% accuracy).
 - **Super Ensemble**:
-  - Merged balanced and imbalanced dataset ensembles into a single model (`super_ensemble_model.pt`), achieving 98% accuracy. ![Confusion Matrix](<https://drive.google.com/file/d/1ZD0aEtsa2H3fhPGaLorVld-HCzzNf_8i/view?usp=sharing>)
+  - Merged balanced and imbalanced dataset ensembles into a single model (`super_ensemble_model.pt`), achieving 98% accuracy. ![Confusion Matrix](https://drive.google.com/file/d/1ZD0aEtsa2H3fhPGaLorVld-HCzzNf_8i/view?usp=sharing)
 
 ### Training
 - **Hyperparameters**:
