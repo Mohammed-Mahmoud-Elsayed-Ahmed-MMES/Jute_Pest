@@ -51,9 +51,9 @@ This project develops a deep learning system to classify 17 types of jute pests 
 
 ### API Deployment
 - **Framework**: Built a Flask-based API for real-time pest classification.
-- **Platform**: Hosted on Byte and Wear with a responsive webpage for mobile and desktop access.
+- **Platform**: Hosted on PythonAnywhere with a responsive webpage for mobile and desktop access.
 - **Challenge**: Byte and Wear’s 100MB limit required splitting the model into two files, uploading them, and merging them online.
-- **Solution**: Manually split the model (e.g., weights and architecture), uploaded parts, and merged them on the server, enabling global access.
+- **Solution**: Manually split the model (e.g., weights and architecture), uploaded the parts, and merged them on the server, enabling global access.
 
 ## Results
 - **Test Accuracies**:
@@ -64,14 +64,14 @@ This project develops a deep learning system to classify 17 types of jute pests 
   - Super Ensemble: 98% (macro/weighted average precision, recall, F1-score).
 - **Classification Report** (Super Ensemble):
   - Precision/Recall/F1: 0.98 (macro/weighted average) across 379 test samples.
-  - High-performing classes: Jute Stem Girdler, Leaf Beetle (1.00); Termite odontotermes (0.96).
+  - High-performing classes: Jute Stem Girdler, Leaf Beetle (1.00); Termite Odontotermes (0.96).
 - **Visualizations**:
   - Confusion matrices and loss/accuracy curves plotted with `seaborn` and `matplotlib`.
   - 30 sample predictions saved to `D:/Telegram Downloads/.../PPredicted_Images` with true/predicted labels and confidence scores.
 
 ## Challenges and Solutions
 1. **Dataset Imbalance**:
-   - **Challenge**: Significant class disparity reduced model fairness.
+   - **Challenge**: Significant class disparity reduces model fairness.
    - **Solution**: Tested balanced dataset with augmentation but chose imbalanced dataset for ~2% higher accuracy.
 2. **Variable Image Sizes**:
    - **Challenge**: Inconsistent dimensions (e.g., 612x612 to 3056x4592).
@@ -83,14 +83,14 @@ This project develops a deep learning system to classify 17 types of jute pests 
    - **Challenge**: Complex models risked overfitting.
    - **Solution**: Applied dropout (p=0.4), early stopping, and augmentation (for balanced dataset).
 5. **Model Size for Deployment**:
-   - **Challenge**: Model exceeded Byte and Wear’s 100MB limit.
-   - **Solution**: Split model into two files, uploaded, and merged online.
+   - **Challenge**: Model exceeded PythonAnywhere’s 100MB limit.
+   - **Solution**: Split the model into two files, uploaded, and merged online.
 6. **Training Stability**:
    - **Challenge**: Potential errors (e.g., `RuntimeError` in early iterations).
    - **Solution**: Debugged tensor shapes and ensured stable training in final models.
 
 ## My Journey
-Starting as a beginner, I faced challenges balancing this project with other commitments. After a hiatus, I resumed work with determination, completing it 2-3 months ago. This journey taught me resilience, the value of experimentation (e.g., balanced vs. imbalanced datasets), and the power of combining custom and pre-trained models. The result is a robust, practical solution for agricultural pest identification.
+Starting as a beginner, I faced challenges balancing this project with other commitments. After a hiatus, I resumed work with determination and completed it 2-3 months ago. This journey taught me resilience, the value of experimentation (e.g., balanced vs. imbalanced datasets), and the power of combining custom and pre-trained models. The result is a robust, practical solution for agricultural pest identification.
 
 ## Installation
 1. Clone the repository:
@@ -116,8 +116,8 @@ Starting as a beginner, I faced challenges balancing this project with other com
 ## Usage
 - **Training**: Run `train.py` to train models (custom CNN, ResNet18, ensembles).
 - **Inference**: Use `predict.py` for single-image predictions or the Flask API (`app.py`) for web-based predictions.
-- **API Access**: Visit the responsive webpage hosted on Byte and Wear to upload images and get predictions.
-- **Demo**: Watch the video demo (link TBD) to see the API in action.
+- **API Access**: Visit the responsive webpage hosted on PythonAnywhere to upload images and get predictions(<https://mohamed333.pythonanywhere.com/>).
+- **Demo**: Watch the video demo to see the API in action.
 
 ## Future Work
 - Explore advanced augmentation (e.g., GANs) to improve balanced dataset performance.
@@ -129,4 +129,4 @@ Starting as a beginner, I faced challenges balancing this project with other com
 Thanks to the "Jute Pest Dataset" providers and the open-source PyTorch community. This project reflects months of learning, experimentation, and dedication to advancing #AIinAgriculture.
 
 ## Contact
-Connect with me on [LinkedIn](<your-linkedin-profile>) to discuss this project or collaborate on AI for agriculture!
+Connect with me on [LinkedIn](https://www.linkedin.com/in/mohamed-mahmoud-elsayed/) to discuss this project or collaborate on AI for agriculture!
